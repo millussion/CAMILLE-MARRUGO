@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.portafolio {
+    background-image: url(img/63.png);
+    height: 20vh;
+    color: #0a0a0a;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* navegador */
+.nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav-logo {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #0a0a0a;
+}
+
+.nav-menu-normal {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    color: #0a0a0a;
+}
+
+.nav-menu-sidebar {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    color: #0a0a0a;
+}
+
+.sidebar-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.234);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.close-sidebar {
+    text-align: right;
+}
+
+.menu-sidebar {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .nav-menu-normal {
+        display: none;
+    }
+
+    .menu-sidebar {
+        display: flex;
+    }
+
+    .head {
+        min-height: 130vh;
+        padding: 140px 20px 60px;
+    }
+
+    .head-title {
+        font-size: 170px;
+        line-height: 0.9;
+    }
+
+    .head-slash {
+        font-size: 170px;
+    }
+
+    .head-img-slot {
+        width: 130px;
+        height: 130px;
+    }
+
+    .head-bottom {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .sidebar-nav {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 801px) {
+    .sidebar-nav {
+        display: none !important;
+    }
+
+    .close-sidebar {
+        display: none !important;
+    }
+}
+
+.sidebar-nav a {
+    width: 100%;
+    padding: 40px;
+    text-decoration: none;
+}
+
+.sidebar-nav .nav-logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* contacto */
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+}
+
+.contacto h2 {
+    font-size: 90px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    padding: 30px;
+
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    background: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+}
